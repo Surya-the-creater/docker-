@@ -1,0 +1,16 @@
+name: demo
+on: workflow_dispatch   # Allows manual trigger from GitHub Actions UI
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: linux command
+        run: echo "jump high"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: execucte linux
+        run: |
+          echo "thanks bro"
